@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated basicmodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="basicmodel.ecore.basicmodel.presentation.BasicmodelModelWizardID"
+            name="%_UI_BasicmodelModelWizard_label"
+            class="basicmodel.ecore.basicmodel.presentation.BasicmodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BasicmodelModelFile.gif">
+         <description>%_UI_BasicmodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated basicmodel -->
+      <editor
+            id="basicmodel.ecore.basicmodel.presentation.BasicmodelEditorID"
+            name="%_UI_BasicmodelEditor_label"
+            icon="icons/full/obj16/BasicmodelModelFile.gif"
+            extensions="basicmodel"
+            class="basicmodel.ecore.basicmodel.presentation.BasicmodelEditor"
+            contributorClass="basicmodel.ecore.basicmodel.presentation.BasicmodelActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
